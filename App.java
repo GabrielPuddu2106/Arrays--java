@@ -1,34 +1,34 @@
+import java. util. Scanner;
 
+public class App{
+    public static void main(String [] args){
+        Scanner lector = new Scanner(System.in);
 
-public class App {  
-    
-    public static void main(String[] args){ 
-        // Declaracion de arreglos
+        // DECLARACION DE MATRIZ A
 
-        int arreglo1[] = new int[5]; //0,1,2,3,4
-        int [] arreglo2 = new int[10];// 0,1,2,3,4,5,6,7,8,9
-        //arreglo2 = {}
-        //Declaracion e inicializacion de arreglos
-        int arreglo3 [] = {1,2,3,4,5,6,7}; //0,1,2,3,4,5,6
-        int [] arreglo4 = new int [] {10,20,30,40,50}; // 0,10,20,30,40
+        System.out.println("Cantidad de  filas Matriz A : ");
+        int CantFilas1 = lector.nextInt();
 
-        //Acceder e imprimir elementos
-        System.out.println(arreglo1[2]); //0
-        System.out.println(arreglo2[7]); //0
-        System.out.println(arreglo3[5]); //6
-        System.out.println(arreglo4[4]); //50
-        // Asignar valores a los arreglos
-        arreglo1[0] = 18;
-        arreglo1[1] = 9;
-        arreglo1[2] = 5;
-        arreglo1[3] = 14;
-        arreglo1[4] = 20;
-        System.out.println("Arreglo[0]"+arreglo1[0]);
-        System.out.println("Arreglo[1]"+arreglo1[1]);
-        System.out.println("Arreglo[2]"+arreglo1[2]);
-        System.out.println("Arreglo[3]"+arreglo1[3]);
-        System.out.println("Arreglo[4]"+arreglo1[4]);
+        System.out.println("Cantidad de columnas A : ");
+        int CantColumnas1 = lector.nextInt();
+        int[][] matrizA = new int [CantFilas1][CantColumnas1];
 
+        // DECLARACION DE MATRIZ B
 
-}
+        System.out.println( "Cantidad de filas Matriz B: ");
+        int CantFilas2 = lector.nextInt();
+
+        System.out.println("Cantidad de columnas Matriz B: ");
+        int CantColumnas2 = lector.nextInt();
+        int [][] matrizB = new int [CantFilas2][CantColumnas2];
+
+        System.out.println("Ingrese los elementos de la matriz A: ");
+        for (int i = 0; i< matrizA.length; i++) { //Para las filas 
+            for ( int j = 0; j < matrizA[i].length; j++){ //Para las columnas de cada filas
+
+            }
+        
+        
+        }
+    }
 }
